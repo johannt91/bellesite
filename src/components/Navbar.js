@@ -1,8 +1,5 @@
 import React from "react";
 import { Link } from 'gatsby'
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
-import "@popperjs/core/dist/umd/popper.min.js";
 import { StaticImage } from "gatsby-plugin-image"
 
 import { Navbar, Nav } from "react-bootstrap";

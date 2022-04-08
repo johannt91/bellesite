@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  padding: 0;
+  font-size: 1.3rem;
+}
+
+.nav-logo {
+  height: 5rem;
+  width: 6rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  background: rgb(222, 221, 221);
+  font-weight: bold;
+}

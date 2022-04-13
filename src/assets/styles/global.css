@@ -4,26 +4,120 @@
   box-sizing: border-box;
 }
 
-.navigation {
+body {
+  background: rgb(243, 243, 243);
+}
+
+.header {
+  display: flex;
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  padding: 0 2rem;
+  z-index: 200;
+}
+
+/* .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
   font-size: 1.3rem;
+} */
+
+.navbar {
+  background: #fff;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
 }
 
-.nav-logo {
-  height: 5rem;
-  width: 6rem;
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.2rem;
+  padding: 0 1rem;
 }
 
 .nav-items {
   list-style: none;
-  display: flex;
+  height: 0;
+  text-align: center;
+  overflow: hidden;
+  transition: height 350ms ease;
+}
+
+.show-nav-items {
+  height: 15rem;
+}
+.nav-logo {
+  height: 3.5rem;
+  width: 4rem;
 }
 
 .nav-item {
-  padding: 0 1rem;
+  padding: 0.9rem 0;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.toggle-button {
+  width: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 2rem 0;
+  vertical-align: middle;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 1.8rem;
+  height: 0.15rem;
+  background: #000;
+  display: block;
+  position: relative;
+  margin: 0.2rem 0;
+}
+
+.bar-open,
+.bar-close {
+  transition: opacity 200ms, transform 300ms;
+}
+/* bar open */
+.toggle-button__bar.bar-open:nth-child(1) {
+  transform: rotate(45deg);
+  top: 0.4rem;
+}
+.toggle-button__bar.bar-open:nth-child(2) {
+  opacity: 0;
+  width: 0;
+}
+.toggle-button__bar.bar-open:nth-child(3) {
+  transform: rotate(-45deg);
+  bottom: 0.28rem;
+}
+
+/* bar close */
+.toggle-button__bar.bar-close:nth-child(1) {
+  transform: rotate(0);
+}
+.toggle-button__bar.bar-close:nth-child(2) {
+  opacity: 1;
+}
+.toggle-button__bar.bar-close:nth-child(3) {
+  transform: rotate(0);
 }
 
 footer {
@@ -33,4 +127,30 @@ footer {
   padding: 1rem 0;
   background: rgb(222, 221, 221);
   font-weight: bold;
+}
+
+@media (min-width: 45rem) {
+  
+  .toggle-button {
+    display: none;
+  }
+
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-items {
+    list-style: none;
+    height: 3rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-item {
+    padding: 0 2rem;
+    font-size: 1.2rem;
+  }
 }

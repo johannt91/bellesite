@@ -6,7 +6,7 @@
 
  module.exports = {
   /* Your site config here */
-  pathPrefix: "/bellesartz",
+  pathPrefix: "/bellesite",
   plugins: [`gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,

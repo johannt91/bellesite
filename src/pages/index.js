@@ -6,29 +6,28 @@ import * as Main from "../assets/styles/main.module.css"
 
 export default function Home() {
   return (
-    <>
     <Layout>
-    <section className={Main.hero}>
-      <div className={Main.words}>
-        <span>
-          <strong>coding</strong>
-        </span>
-        <span>
-          <strong>design</strong>
-        </span>
-        <span>
-          <strong>digital</strong>
-        </span>
-        <span>
-            <strong>graphic</strong>
-        </span>
-      </div>
-      <h5 className={Main.subtext}>build your brand portfolio with us.</h5>
+        <section className={Main.hero}>
+            <div className={Main.words}>
+                <span>
+                <strong>coding</strong>
+                </span>
+                <span>
+                <strong>design</strong>
+                </span>
+                <span>
+                <strong>digital</strong>
+                </span>
+                <span>
+                    <strong>graphic</strong>
+                </span>
+            </div>
+            <h5 className={Main.subtext}>build your brand portfolio with us.</h5>
 
-      <a href="#portfolio" className={Main.mouse}>
-          <div className={Main.scroll}></div>
-      </a>
-    </section>
+            <a href="#portfolio" className={Main.mouse}>
+                <div className={Main.scroll}></div>
+            </a>
+        </section>
 
     <section id="portfolio" className={Main.portfolio}>
         <div className={Main.portfolio_container}>
@@ -127,6 +126,6 @@ export default function Home() {
       </ul>
     </section>
     </Layout>
-  </>
+
   )
 }

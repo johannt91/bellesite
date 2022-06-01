@@ -4,8 +4,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-bg-color: #f3f3f3;
+}
+
 body {
-  background: rgb(243, 243, 243);
+  background: var(--primary-bg-color);
 }
 
 .mobile-navbar {
@@ -157,4 +161,10 @@ footer {
 
 .construction span {
   font-size: 10rem;
+}
+
+.active {
+  border-bottom: solid #ffbf00 2px;
+  background: #ebebeb;
+  padding: 0.2rem 0.3rem;
 }

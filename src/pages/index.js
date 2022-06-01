@@ -3,26 +3,35 @@ import Layout from "../components/Layout"
 import { StaticImage } from "gatsby-plugin-image"
 import "../assets/styles/global.css"
 import * as Main from "../assets/styles/main.module.css"
+import Typewriter from 'typewriter-effect'
 
 export default function Home() {
   return (
     <Layout>
         <section className={Main.hero}>
-            <div className={Main.words}>
-                <span>
-                <strong>coding</strong>
-                </span>
-                <span>
-                <strong>design</strong>
-                </span>
-                <span>
-                <strong>digital</strong>
-                </span>
-                <span>
-                    <strong>graphic</strong>
-                </span>
+            <div className={Main.hero_cta}>
+                <Typewriter
+                options={{
+                    loop: true
+                }}
+                    onInit={(typewriter) => {
+                        typewriter.typeString('<strong>CODING<span>.</span></strong>')
+                        .pauseFor(2500)
+                        .deleteAll()
+                        .typeString('<strong>DESIGN<span>.</span></strong>')
+                        .pauseFor(2500)
+                        .deleteAll()
+                        .typeString('<strong>DIGITAL<span>.</span></strong>')
+                        .pauseFor(2500)
+                        .deleteAll()
+                        .typeString('<strong>GRAPHIC<span>.</span></strong>')
+                        .pauseFor(2500)
+                        .deleteAll()
+                        .start();
+                    }}
+                />
+                <h5 className={Main.subtext}>build your brand portfolio with us.</h5>
             </div>
-            <h5 className={Main.subtext}>build your brand portfolio with us.</h5>
 
             <a href="#portfolio" className={Main.mouse}>
                 <div className={Main.scroll}></div>
@@ -32,7 +41,7 @@ export default function Home() {
     <section id="portfolio" className={Main.portfolio}>
         <div className={Main.portfolio_container}>
             <div className={Main.portfolio_item_container} >
-                <a href="single-project.html" className={Main.portfolio_item}>
+                <a href="/portfolio" className={Main.portfolio_item}>
                     <StaticImage src="../assets/images/img4.jpg" alt="technology" className={Main.img_responsive} />
                     <div className={Main.portfolio_item_hover}>
                         <div className="clearfix">
@@ -46,7 +55,7 @@ export default function Home() {
             </div>
 
             <div className={Main.portfolio_item_container}>
-                <a href="single-project.html" className={Main.portfolio_item}>
+                <a href="/portfolio" className={Main.portfolio_item}>
                     <StaticImage src="../assets/images/img2.jpg" alt="technology" className={Main.img_responsive} />
                     <div className={Main.portfolio_item_hover}>
                         <div className="clearfix">
@@ -60,7 +69,7 @@ export default function Home() {
             </div>
 
             <div className={`${Main.portfolio_item_container} ${Main.portfolio_grid_item}`}>
-                <a href="single-project.html" className={Main.portfolio_item}>
+                <a href="/portfolio" className={Main.portfolio_item}>
                     <StaticImage src="../assets/images/img3.jpg" alt="technology" className={Main.img_responsive} />
                     <div className={Main.portfolio_item_hover}>
                         <div className="clearfix">
@@ -74,7 +83,7 @@ export default function Home() {
             </div>
 
             <div className={Main.portfolio_item_container}>
-                <a href="single-project.html" className={Main.portfolio_item}>
+                <a href="/portfolio" className={Main.portfolio_item}>
                     <StaticImage src="../assets/images/img1.jpg" alt="technology" className={Main.img_responsive} />
                     <div className={Main.portfolio_item_hover}>
                         <div className="clearfix">
@@ -88,7 +97,7 @@ export default function Home() {
             </div>
 
             <div className={Main.portfolio_item_container}>
-                <a href="single-project.html" className={Main.portfolio_item}>
+                <a href="/portfolio" className={Main.portfolio_item}>
                     <StaticImage src="../assets/images/img5.jpg" alt="technology" className={Main.img_responsive} />
                     <div className={Main.portfolio_item_hover}>
                         <div className="clearfix">
@@ -126,6 +135,5 @@ export default function Home() {
       </ul>
     </section>
     </Layout>
-
   )
 }

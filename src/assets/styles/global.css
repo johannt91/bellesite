@@ -115,7 +115,7 @@ footer {
   font-weight: bold;
 }
 
-@media (min-width: 45rem) {
+@media (min-width: 43rem) {
   .mobile-navbar {
     display: none;
   }
@@ -123,6 +123,7 @@ footer {
   .navbar {
     display: block;
     position: fixed;
+    background: #fff;
     z-index: 100;
     width: 100%;
   }
@@ -143,4 +144,17 @@ footer {
     padding: 0 2rem;
     font-size: 1.2rem;
   }
+}
+
+
+.construction {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.construction span {
+  font-size: 10rem;
 }

@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 
-const contact = () => {
+const services = () => {
   return (
     <Layout>
       <section className="construction">
@@ -12,4 +12,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default services

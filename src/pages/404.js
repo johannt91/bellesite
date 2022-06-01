@@ -1,15 +1,14 @@
 import React from "react"
 import Layout from "../components/Layout"
 
-const contact = () => {
+const notFound = () => {
   return (
     <Layout>
       <section className="construction">
-        <span>🏗</span>
-        <h1>Page under construction!</h1>
+        <h1>404</h1>
       </section>
     </Layout>
   )
 }
 
-export default contact
+export default notFound

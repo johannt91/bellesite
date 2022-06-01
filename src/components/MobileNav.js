@@ -7,7 +7,7 @@ const MobileNav = () => {
     const [show, setShow] = useState(false);
 
   return (
-      <header>
+      <>
         <nav className="mobile-navbar">
             <div className="nav-header">
                 <StaticImage src="../assets/images/logo.jpg" alt="Belles Artz" className="nav-logo"/>
@@ -24,7 +24,7 @@ const MobileNav = () => {
                 <li className="nav-item"><Link className="nav-link" activeClassName="active" to="/contact" as={Link} eventKey="4">Contact Us</Link></li>
             </ul>
         </nav>
-    </header>
+    </>
   )
 }
 

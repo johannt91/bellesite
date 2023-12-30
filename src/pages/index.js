@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import "../assets/styles/global.css"
 import * as Main from "../assets/styles/main.module.css"
 import Typewriter from 'typewriter-effect'
+import Portfolio from "../components/Portfolio"
 
 export default function Home() {
   return (
@@ -30,7 +31,7 @@ export default function Home() {
                         .start();
                     }}
                 />
-                <h5 className={Main.subtext}>build your brand portfolio with us.</h5>
+                <h5 className={Main.subtext}>BOLD IDEAS AND BRILLIANT DESIGNS TELL A GREAT  STORY</h5>
             </div>
 
             <a href="#portfolio" className={Main.mouse}>
@@ -38,83 +39,10 @@ export default function Home() {
             </a>
         </section>
 
-    <section id="portfolio" className={Main.portfolio}>
-        <div className={Main.portfolio_container}>
-            <div className={Main.portfolio_item_container} >
-                <a href="/portfolio" className={Main.portfolio_item}>
-                    <StaticImage src="../assets/images/img4.jpg" alt="technology" className={Main.img_responsive} />
-                    <div className={Main.portfolio_item_hover}>
-                        <div className="clearfix">
-                            <div className={Main.item_info}>
-                                <span>Mockups in seconds</span>
-                                <em>Fashion / Logo</em>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div className={Main.portfolio_item_container}>
-                <a href="/portfolio" className={Main.portfolio_item}>
-                    <StaticImage src="../assets/images/img2.jpg" alt="technology" className={Main.img_responsive} />
-                    <div className={Main.portfolio_item_hover}>
-                        <div className="clearfix">
-                            <div className={Main.item_info}>
-                                <span>Floating mockups</span>
-                                <em>Ads / Graphics</em>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div className={`${Main.portfolio_item_container} ${Main.portfolio_grid_item}`}>
-                <a href="/portfolio" className={Main.portfolio_item}>
-                    <StaticImage src="../assets/images/img3.jpg" alt="technology" className={Main.img_responsive} />
-                    <div className={Main.portfolio_item_hover}>
-                        <div className="clearfix">
-                            <div className={Main.item_info}>
-                                <span>Photorealistic smartwatch</span>
-                                <em>Photography</em>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div className={Main.portfolio_item_container}>
-                <a href="/portfolio" className={Main.portfolio_item}>
-                    <StaticImage src="../assets/images/img1.jpg" alt="technology" className={Main.img_responsive} />
-                    <div className={Main.portfolio_item_hover}>
-                        <div className="clearfix">
-                            <div className={Main.item_info}>
-                                <span>Held by hands</span>
-                                <em>Fashion / Ads</em>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div className={Main.portfolio_item_container}>
-                <a href="/portfolio" className={Main.portfolio_item}>
-                    <StaticImage src="../assets/images/img5.jpg" alt="technology" className={Main.img_responsive} />
-                    <div className={Main.portfolio_item_hover}>
-                        <div className="clearfix">
-                            <div className={Main.item_info}>
-                                <span>Mobile devices</span>
-                                <em>Graphics / Ads</em>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
+    <Portfolio/>
 
     <section className={Main.services}>
-      <h1 className={Main.services_title}>Our Services</h1>
-      <p className={Main.services_subtext}>We provide the following services</p>
+      <h2 className={Main.section_title}>Meet the Team</h2>
       <ul className={Main.services_list}>
         <li className={Main.service}>
           <StaticImage src="../assets/images/web.jpg" alt="technology" className={Main.service_image} />
@@ -133,6 +61,10 @@ export default function Home() {
           <p className={Main.service_description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec viverra augue. Suspendisse feugiat est eget nunc mollis interdum. Proin.</p>
         </li>
       </ul>
+    </section>
+
+    <section className={Main.quote_container}>
+        <h2 className={Main.section_title}>Get a Quote</h2>          
     </section>
     </Layout>
   )

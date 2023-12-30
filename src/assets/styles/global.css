@@ -124,6 +124,10 @@ footer {
     display: none;
   }
 
+  .nav-link {
+    font-size: 0.8rem;
+  }
+
   .navbar {
     display: block;
     position: fixed;
@@ -145,7 +149,7 @@ footer {
   }
 
   .nav-item {
-    padding: 0 2rem;
+    padding: 0 1rem;
     font-size: 1.2rem;
   }
 }

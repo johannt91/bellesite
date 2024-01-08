@@ -1,0 +1,21 @@
+.pageContainer {
+  /* height: 100vh; */
+}
+
+
+.container {
+  padding: 0 5rem;
+  width: 75%;
+}
+
+.heading {
+  padding-top: 3.25rem;
+}
+
+.subheading {
+    padding-top: 0.375rem;
+}
+
+.paragraph {
+    margin-top: 1rem;
+}

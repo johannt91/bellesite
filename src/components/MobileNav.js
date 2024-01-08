@@ -18,10 +18,10 @@ const MobileNav = () => {
                 </button>
             </div>
             <ul className={show ? "nav-items show-nav-items" : "nav-items" }>
-                <li className="nav-item"><Link className="nav-link" exact activeClassName="active" to="/"  eventKey="1">About</Link></li>
-                <li className="nav-item"><Link className="nav-link" activeClassName="active" to="/portfolio" as={Link} eventKey="2">Brand Portfolio</Link></li>
-                <li className="nav-item"><Link className="nav-link" activeClassName="active" to="/services" as={Link} eventKey="3">Services</Link></li>
-                <li className="nav-item"><Link className="nav-link" activeClassName="active" to="/contact" as={Link} eventKey="4">Contact Us</Link></li>
+                <li className="nav-item"><Link className="nav-link" activeClassName="active" to="/" >About</Link></li>
+                <li className="nav-item"><Link className="nav-link" activeClassName="active" to="/portfolio" as={Link} >Brand Portfolio</Link></li>
+                <li className="nav-item"><Link className="nav-link" activeClassName="active" to="/services" as={Link} >Services</Link></li>
+                <li className="nav-item"><Link className="nav-link" activeClassName="active" to="/contact" as={Link} >Contact Us</Link></li>
             </ul>
         </nav>
     </>

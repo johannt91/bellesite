@@ -5,7 +5,8 @@ const notFound = () => {
   return (
     <Layout>
       <section className="construction">
-        <h1>404</h1>
+        <span>🏗</span>
+        <h1>Page under construction!</h1>
       </section>
     </Layout>
   )

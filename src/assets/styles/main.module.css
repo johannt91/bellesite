@@ -187,6 +187,7 @@ strong span {
 /* ==================== Quote Section Style Start ==================== */
 .quote_container {
   background-color: #E9E3DC;
+  text-align: center; /*Temporary solution for centering heading*/
 }
 
 /* ==================== Quote Section Style End ==================== */

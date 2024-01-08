@@ -1,0 +1,12 @@
+.carouselContainer {
+    padding: 8rem 3rem 3rem;
+}
+
+.imgItem {
+    object-fit: contain !important;
+}
+
+.item {
+    width: 95%;
+    aspect-ratio: 1/1;
+}

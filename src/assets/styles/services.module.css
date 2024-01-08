@@ -1,0 +1,51 @@
+.servicesContainer {
+    margin-top: 8rem;
+    padding: 0 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicesContainer>div {
+    max-width: 80%;
+    min-width: 50%;
+    margin-bottom: 3rem;
+}
+
+.servicesHeading {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.serviceDescription {
+    padding: 2rem 0;
+    line-height: 2;
+}
+
+.serviceList {
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+.serviceQuote {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+table, th, td {
+    color: #205986;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto auto 3rem;
+}
+
+
+th, td {
+ padding: 1rem 0.5rem;
+}
+
+.tableHighlight {
+    background-color: #FFC001;
+}

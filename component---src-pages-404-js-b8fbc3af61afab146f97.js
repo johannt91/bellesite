@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[883],{429:function(e,t,l){l.r(t);var a=l(7294),r=l(938);t.default=()=>a.createElement(r.Z,null,a.createElement("section",{className:"construction"},a.createElement("h1",null,"404")))}}]);
-//# sourceMappingURL=component---src-pages-404-js-b8fbc3af61afab146f97.js.map

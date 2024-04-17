@@ -9,7 +9,7 @@ const project = ({ location }) => {
 
   return (
     <Layout>
-      <section className={Style.pageContainer}>
+      <section>
         <Slides title={title} />
         <div className={Style.container}>
           <h2 className={Style.heading}>Food</h2>

@@ -1,12 +1,19 @@
 .carouselContainer {
-    padding: 8rem 3rem 3rem;
+    margin: 8rem 3rem 3rem;
 }
 
-.imgItem {
+.react-multi-carousel-item {
     object-fit: contain !important;
 }
 
-.item {
-    width: 95%;
-    aspect-ratio: 1/1;
+
+img {
+    object-fit: contain !important;
+}
+
+@media (min-width: 46rem) {
+    .item {
+        height: 575px;
+    }
+    
 }

@@ -1,51 +1,86 @@
+h1 {
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: justify;
+  word-spacing: -2px;
+}
+
 .servicesContainer {
-    margin-top: 8rem;
-    padding: 0 6rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-top: 8rem;
+  padding: 0 2rem;
 }
 
-.servicesContainer>div {
-    max-width: 80%;
-    min-width: 50%;
-    margin-bottom: 3rem;
-}
-
-.servicesHeading {
-    font-size: 4rem;
-    margin-bottom: 4rem;
-    text-align: center;
+.servicesContainer > div {
+  margin-bottom: 3rem;
 }
 
 .serviceDescription {
-    padding: 2rem 0;
-    line-height: 2;
+  margin-bottom: 1rem;
+  line-height: 2;
 }
 
 .serviceList {
-    line-height: 2;
-    margin-bottom: 2rem;
+  line-height: 2;
+  margin: 3rem 0;
+  font-size: 1.1rem;
 }
 
 .serviceQuote {
-    text-decoration: none;
-    font-size: 1.5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-table, th, td {
-    color: #205986;
-    border: 1px solid black;
-    border-collapse: collapse;
-    text-align: center;
-    margin: auto auto 3rem;
+.serviceQuote:hover {
+  text-decoration: underline;
 }
 
+table,
+th,
+td {
+  color: #205986;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  margin: auto auto 3rem;
+}
 
-th, td {
- padding: 1rem 0.5rem;
+th,
+td {
+  padding: 0.5rem;
+  font-size: 0.7rem;
 }
 
 .tableHighlight {
-    background-color: #FFC001;
+  background-color: #ffbf00;
+}
+
+@media (min-width: 43rem) {
+  .servicesContainer {
+    max-width: 80%;
+    margin: 8rem auto 0 auto;
+  }
+
+  .serviceList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    ;
+  }
+
+  th,
+  td {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
 }

@@ -9,7 +9,7 @@ const services = () => {
       <section className={Styles.servicesContainer}>
         {/* SERVICE 1 */}
 
-        <h1 className={Styles.servicesHeading}>SERVICES</h1>
+        <h1>SERVICES</h1>
 
         <div>
           <h2>BUSINESS IMAGE DESIGN</h2>
@@ -125,7 +125,10 @@ const services = () => {
         <div>
           <h2>WEBSITE DESIGN</h2>
           <p className={Styles.serviceDescription}>
-            Customized websites. Domain. Copywriting and content creation.
+            Custom websites designed and built to showcase your brand and meet
+            your business needs. From conceptualization to deployment, we handle
+            every aspect of the development process with attention to detail and
+            dedication.
           </p>
 
           <Link to="/quote" className={Styles.serviceQuote}>
@@ -134,6 +137,27 @@ const services = () => {
         </div>
 
         {/* SERVICE 6 */}
+
+        <div>
+          <h2>CONTENT CREATIVE SESSIONS</h2>
+          <p className={Styles.serviceDescription}>
+            To showcase your brands on Social Media we schedule creative
+            collaboration sessions to capture quality photographic and video
+            content that is suitable and trending for these platforms. These
+            sessions are conducted at the client's physical business space and
+            is scheduled monthly according to your plan. The duration and number
+            of sessions will also vary across each level of service. Be sure to
+            discuss with us your needs and clarify the details of your creative
+            content session before booking your plan as we are quite strict with
+            the time management of this service.
+          </p>
+
+          <Link to="/quote" className={Styles.serviceQuote}>
+            Request a quote
+          </Link>
+        </div>
+
+        {/* SERVICE 7 */}
 
         <div>
           <h2>SOCIAL MEDIA MANAGEMENT &amp; CONTENT CREATION</h2>
@@ -248,7 +272,9 @@ const services = () => {
 
           <table>
             <tbody>
-              <th colSpan={2} className={Styles.tableHighlight}>ADD-ONS/PRICE PER UNIT</th>
+              <th colSpan={2} className={Styles.tableHighlight}>
+                ADD-ONS/PRICE PER UNIT
+              </th>
               <tr>
                 <td>SINGLE AD/POST DESIGN</td>
                 <td>$225</td>

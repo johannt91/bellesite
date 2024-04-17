@@ -10,7 +10,7 @@
 }
 
 .hero_cta {
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1;
   display: flex;
   flex-direction: column;
@@ -19,16 +19,21 @@
   width: 100%;
 }
 
+.hero_cta>div {
+  position: absolute;
+  top: 18rem;
+}
+
 strong span {
   color: #ffbf00;
 }
 
 .subtext {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   letter-spacing: 4px;
   color: #999;
   line-height: 1.5;
-  margin-top: 1rem;
+  margin-top: 8rem;
   padding: 0 1rem;
 }
 
@@ -157,6 +162,10 @@ strong span {
 }
 
 @media (min-width: 40rem) {
+  .hero_cta {
+    font-size: 4rem;
+  }
+
   .services {
     max-width: 80rem;
     margin: 10rem auto;

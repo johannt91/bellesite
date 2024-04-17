@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -42,7 +44,7 @@ body {
 }
 
 .show-nav-items {
-  height: 15rem;
+  height: 100vh;
 }
 .nav-logo {
   height: 3.5rem;
@@ -50,7 +52,7 @@ body {
 }
 
 .nav-item {
-  padding: 0.9rem 0;
+  padding: 1.2rem 0;
   font-size: 1.5rem;
 }
 
@@ -119,7 +121,7 @@ footer {
   font-weight: bold;
 }
 
-@media (min-width: 43rem) {
+@media (min-width: 46rem) {
   .mobile-navbar {
     display: none;
   }
@@ -137,7 +139,7 @@ footer {
     top: 0;
     left: 0;
   }
-  
+
   .toggle-button {
     display: none;
   }
@@ -155,7 +157,6 @@ footer {
     font-size: 1.2rem;
   }
 }
-
 
 .construction {
   height: 100vh;

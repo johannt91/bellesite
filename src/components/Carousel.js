@@ -10,14 +10,14 @@ const Slides = ({title}) => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4,
-      slidesToSlide: 3, // optional, default to 1.
-      partialVisibilityGutter: 40,
+      items: 1,
+      slidesToSlide: 1, // optional, default to 1.
+      // partialVisibilityGutter: 40,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      slidesToSlide: 2, // optional, default to 1.
+      items: 1,
+      slidesToSlide: 1, // optional, default to 1.
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -28,6 +28,7 @@ const Slides = ({title}) => {
 
 
   return (
+<div>
 
     <Carousel
       draggable={false}
@@ -40,7 +41,6 @@ const Slides = ({title}) => {
       containerClass={Style.carouselContainer}
       removeArrowOnDeviceType={["tablet", "mobile"]}
       dotListClass="custom-dot-list-style"
-      itemClass={Style.imgItem}
     >
 
       {/* <StaticImage src="../assets/images/digital1.jpg" alt="" className={Style.item} /> */}
@@ -48,8 +48,10 @@ const Slides = ({title}) => {
       <StaticImage src={`${imgPath}/food2.png`} alt="" className={Style.item} />
       <StaticImage src={`${imgPath}/food3.png`} alt="" className={Style.item} />
       <StaticImage src={`${imgPath}/food4.png`} alt="" className={Style.item} />
+      <StaticImage src={`${imgPath}/food5.png`} alt="" className={Style.item} />
 
     </Carousel>
+</div>
   )
 }
 

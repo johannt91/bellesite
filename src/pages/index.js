@@ -23,27 +23,31 @@ export default function Home() {
     <Layout>
       <section className={Main.hero}>
         <div className={Main.hero_cta}>
-          <Typewriter
-            options={{
-              loop: true,
-            }}
-            onInit={typewriter => {
-              typewriter
-                .typeString("<strong>WEB<span>.</span></strong>")
-                .pauseFor(2500)
-                .deleteAll()
-                .typeString("<strong>GRAPHIC DESIGN<span>.</span></strong>")
-                .pauseFor(2500)
-                .deleteAll()
-                .typeString("<strong>DIGITAL<span>.</span></strong>")
-                .pauseFor(2500)
-                .deleteAll()
-                .typeString("<strong>PRODUCT PHOTOGRAPHY<span>.</span></strong>")
-                .pauseFor(2500)
-                .deleteAll()
-                .start()
-            }}
-          />
+          <div>
+            <Typewriter
+              options={{
+                loop: true,
+              }}
+              onInit={typewriter => {
+                typewriter
+                  .typeString("<strong>WEB<span>.</span></strong>")
+                  .pauseFor(2500)
+                  .deleteAll()
+                  .typeString("<strong>GRAPHIC DESIGN<span>.</span></strong>")
+                  .pauseFor(2500)
+                  .deleteAll()
+                  .typeString("<strong>DIGITAL<span>.</span></strong>")
+                  .pauseFor(2500)
+                  .deleteAll()
+                  .typeString(
+                    "<strong>PRODUCT PHOTOGRAPHY<span>.</span></strong>"
+                  )
+                  .pauseFor(2500)
+                  .deleteAll()
+                  .start()
+              }}
+            />
+          </div>
           <h5 className={Main.subtext}>
             BOLD IDEAS AND BRILLIANT DESIGNS TELL A GREAT STORY
           </h5>
@@ -58,7 +62,11 @@ export default function Home() {
       <main id="portfolio" className={Style.portfolio}>
         <div className={Style.portfolio_container}>
           <div className={Style.portfolio_item_container}>
-            <Link to="/projects" className={Style.portfolio_item} state={{galleryTitle: web}}>
+            <Link
+              to="/projects"
+              className={Style.portfolio_item}
+              state={{ galleryTitle: web }}
+            >
               <StaticImage
                 src="../assets/images/img4.jpg"
                 alt="technology"
@@ -76,7 +84,11 @@ export default function Home() {
           </div>
 
           <div className={Style.portfolio_item_container}>
-            <Link to="/projects" className={Style.portfolio_item} state={{galleryTitle: food}}>
+            <Link
+              to="/projects"
+              className={Style.portfolio_item}
+              state={{ galleryTitle: food }}
+            >
               <StaticImage
                 src="../assets/images/gallery/food.jpg"
                 alt="technology"
@@ -96,7 +108,11 @@ export default function Home() {
           <div
             className={`${Style.portfolio_item_container} ${Style.portfolio_grid_item_first}`}
           >
-            <Link to="/projects" className={Style.portfolio_item} state={{galleryTitle: fashion}}>
+            <Link
+              to="/projects"
+              className={Style.portfolio_item}
+              state={{ galleryTitle: fashion }}
+            >
               <StaticImage
                 src="../assets/images/gallery/fashion.jpg"
                 alt="technology"
@@ -114,7 +130,11 @@ export default function Home() {
           </div>
 
           <div className={Style.portfolio_item_container}>
-            <Link href="/projects" className={Style.portfolio_item} state={{galleryTitle: photo}}>
+            <Link
+              href="/projects"
+              className={Style.portfolio_item}
+              state={{ galleryTitle: photo }}
+            >
               <StaticImage
                 src="../assets/images/gallery/product.jpg"
                 alt="technology"
@@ -132,7 +152,11 @@ export default function Home() {
           </div>
 
           <div className={Style.portfolio_item_container}>
-            <Link href="/projects" className={Style.portfolio_item} state={{galleryTitle: digital}}>
+            <Link
+              href="/projects"
+              className={Style.portfolio_item}
+              state={{ galleryTitle: digital }}
+            >
               <StaticImage
                 src="../assets/images/gallery/noodle.jpg"
                 alt="cup noodles"
@@ -153,7 +177,11 @@ export default function Home() {
         {/* BOTTOM HALF OF PORTFOLIO */}
         <div className={Style.portfolio_container}>
           <div className={Style.portfolio_item_container}>
-            <Link href="/projects" className={Style.portfolio_item} state={{galleryTitle: label}}>
+            <Link
+              href="/projects"
+              className={Style.portfolio_item}
+              state={{ galleryTitle: label }}
+            >
               <StaticImage
                 src="../assets/images/gallery/prodlabel.jpg"
                 alt="green tins of cow milk brand butter ghee"
@@ -171,7 +199,11 @@ export default function Home() {
           </div>
 
           <div className={Style.portfolio_item_container}>
-            <Link href="/projects" className={Style.portfolio_item} state={{galleryTitle: logo}}>
+            <Link
+              href="/projects"
+              className={Style.portfolio_item}
+              state={{ galleryTitle: logo }}
+            >
               <StaticImage
                 src="../assets/images/gallery/ebene.jpg"
                 alt="macarons"
@@ -191,7 +223,11 @@ export default function Home() {
           <div
             className={`${Style.portfolio_item_container} ${Style.portfolio_grid_item_second}`}
           >
-            <Link href="/projects" className={Style.portfolio_item} state={{galleryTitle: skincare}}>
+            <Link
+              href="/projects"
+              className={Style.portfolio_item}
+              state={{ galleryTitle: skincare }}
+            >
               <StaticImage
                 src="../assets/images/gallery/skincare1.jpg"
                 alt="skin care"
@@ -209,7 +245,11 @@ export default function Home() {
           </div>
 
           <div className={Style.portfolio_item_container}>
-            <Link href="/projects" className={Style.portfolio_item} state={{galleryTitle: retail}}>
+            <Link
+              href="/projects"
+              className={Style.portfolio_item}
+              state={{ galleryTitle: retail }}
+            >
               <StaticImage
                 src="../assets/images/gallery/retail.jpg"
                 alt="retail graphic"
@@ -227,7 +267,11 @@ export default function Home() {
           </div>
 
           <div className={Style.portfolio_item_container}>
-            <Link href="/projects" className={Style.portfolio_item} state={{galleryTitle: signage}}>
+            <Link
+              href="/projects"
+              className={Style.portfolio_item}
+              state={{ galleryTitle: signage }}
+            >
               <StaticImage
                 src="../assets/images/gallery/signage.jpg"
                 alt="technology"
@@ -241,7 +285,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </Link >
+            </Link>
           </div>
         </div>
       </main>

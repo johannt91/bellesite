@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[125],{3331:function(e,t,l){l.r(t);var n=l(6540),a=l(381);t.default=()=>n.createElement(a.A,null,n.createElement("section",{className:"construction"},n.createElement("span",null,"🏗"),n.createElement("h1",null,"Page under construction!")))}}]);
+//# sourceMappingURL=component---src-pages-404-js-2b50ad125e52394fa746.js.map

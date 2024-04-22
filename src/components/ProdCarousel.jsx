@@ -1,22 +1,23 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
-import { GatsbyImage } from "gatsby-plugin-image"
+// import { GatsbyImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 import * as Style from "../assets/styles/carousel.module.css"
 
 
 const ProdSlides = ({ title }) => {
 
   
-    const data = useStaticQuery(query)
-    const nodes = data.allFile.nodes
+    // const data = useStaticQuery(query)
+    // const nodes = data.allFile.nodes
   
-    console.log(nodes)
+    // console.log(nodes)
 
-    nodes.map((image) => 
-      console.log(image)
-    )
+    // nodes.map((image) => 
+    //   console.log(image)
+    // )
 
 
   const responsive = {
@@ -52,14 +53,31 @@ const ProdSlides = ({ title }) => {
         removeArrowOnDeviceType={["tablet", "mobile"]}
         dotListClass="custom-dot-list-style"
       >
-        {nodes.map((image) => (
+        {/* {nodes.map((image) => (
           <GatsbyImage
             image={image.childImageSharp.gatsbyImageData}
             alt=""
             className={Style.item}
             key={image.id}
           />
-        ))}
+        ))} */}
+        <StaticImage src="../assets/images/carousel-images/prodLabels/label1.jpg" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/prodLabels/label2.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/prodLabels/label3.jpg" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/prodLabels/label4.jpg" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/prodLabels/label5.jpg" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/prodLabels/label6.jpg" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/prodLabels/label7.jpg" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/prodLabels/label8.jpg" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/prodLabels/label9.jpg" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/prodLabels/label10.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/prodLabels/label11.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/prodLabels/label12.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/prodLabels/label13.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/prodLabels/label14.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/prodLabels/label15.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/prodLabels/label16.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/prodLabels/label17.png" alt=""/>
       </Carousel>
     </div>
   )
@@ -67,19 +85,19 @@ const ProdSlides = ({ title }) => {
 
 export default ProdSlides
 
-export const query = graphql`
-  query {
-    allFile(
-      filter: {
-        absolutePath: { regex: "/src/assets/images/carousel-images/prodLabels/" }
-      }
-    ) {
-      nodes {
-        name
-        childImageSharp {
-          gatsbyImageData(height: 575)
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query {
+//     allFile(
+//       filter: {
+//         absolutePath: { regex: "/src/assets/images/carousel-images/prodLabels/" }
+//       }
+//     ) {
+//       nodes {
+//         name
+//         childImageSharp {
+//           gatsbyImageData(height: 575)
+//         }
+//       }
+//     }
+//   }
+// `

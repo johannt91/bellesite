@@ -1,23 +1,19 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
-import { GatsbyImage } from "gatsby-plugin-image"
+// import { GatsbyImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 import * as Style from "../assets/styles/carousel.module.css"
 
 
 const FashionSlides = ({ title }) => {
 
   
-    const data = useStaticQuery(fashionImages)
-    const nodes = data.allFile.nodes
+    // const data = useStaticQuery(fashionImages)
+    // const nodes = data.allFile.nodes
   
-    console.log(nodes)
-
-    nodes.map((image) => 
-      console.log(image)
-    )
-
+    // console.log(nodes)
 
   const responsive = {
     desktop: {
@@ -52,14 +48,20 @@ const FashionSlides = ({ title }) => {
         removeArrowOnDeviceType={["tablet", "mobile"]}
         dotListClass="custom-dot-list-style"
       >
-        {nodes.map((image) => (
+        {/* {nodes.map((image) => (
           <GatsbyImage
             image={image.childImageSharp.gatsbyImageData}
             alt=""
             className={Style.item}
             key={image.id}
           />
-        ))}
+        ))} */}
+
+        <StaticImage src="../assets/images/carousel-images/fashion/fashion1.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/fashion/fashion2.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/fashion/fashion3.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/fashion/fashion4.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/fashion/fashion5.png" alt=""/>
       </Carousel>
     </div>
   )
@@ -67,19 +69,19 @@ const FashionSlides = ({ title }) => {
 
 export default FashionSlides
 
-export const fashionImages = graphql`
-  query {
-    allFile(
-      filter: {
-        absolutePath: { regex: "/src/assets/images/carousel-images/fashion/" }
-      }
-    ) {
-      nodes {
-        name
-        childImageSharp {
-          gatsbyImageData(height: 575)
-        }
-      }
-    }
-  }
-`
+// export const fashionImages = graphql`
+//   query {
+//     allFile(
+//       filter: {
+//         absolutePath: { regex: "/src/assets/images/carousel-images/fashion/" }
+//       }
+//     ) {
+//       nodes {
+//         name
+//         childImageSharp {
+//           gatsbyImageData(height: 575)
+//         }
+//       }
+//     }
+//   }
+// `

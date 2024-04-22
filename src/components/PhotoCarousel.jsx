@@ -1,22 +1,23 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
-import { GatsbyImage } from "gatsby-plugin-image"
+// import { GatsbyImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 import * as Style from "../assets/styles/carousel.module.css"
 
 
 const PhotoSlides = ({ title }) => {
 
   
-    const data = useStaticQuery(query)
-    const nodes = data.allFile.nodes
+    // const data = useStaticQuery(query)
+    // const nodes = data.allFile.nodes
   
-    console.log(nodes)
+    // console.log(nodes)
 
-    nodes.map((image) => 
-      console.log(image)
-    )
+    // nodes.map((image) => 
+    //   console.log(image)
+    // )
 
 
   const responsive = {
@@ -52,14 +53,34 @@ const PhotoSlides = ({ title }) => {
         removeArrowOnDeviceType={["tablet", "mobile"]}
         dotListClass="custom-dot-list-style"
       >
-        {nodes.map((image) => (
+        {/* {nodes.map((image) => (
           <GatsbyImage
             image={image.childImageSharp.gatsbyImageData}
             alt=""
             className={Style.item}
             key={image.id}
           />
-        ))}
+        ))} */}
+
+        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-01.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-02.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-03.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-04.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-05.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-06.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-07.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-09.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-10.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-11.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-12.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-13.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-014.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-15.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-16.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-17.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-18.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-19.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-20.png" alt=""/>
       </Carousel>
     </div>
   )
@@ -67,19 +88,19 @@ const PhotoSlides = ({ title }) => {
 
 export default PhotoSlides
 
-export const query = graphql`
-  query {
-    allFile(
-      filter: {
-        absolutePath: { regex: "/src/assets/images/carousel-images/photography/" }
-      }
-    ) {
-      nodes {
-        name
-        childImageSharp {
-          gatsbyImageData(height: 575)
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query {
+//     allFile(
+//       filter: {
+//         absolutePath: { regex: "/src/assets/images/carousel-images/photography/" }
+//       }
+//     ) {
+//       nodes {
+//         name
+//         childImageSharp {
+//           gatsbyImageData(height: 575)
+//         }
+//       }
+//     }
+//   }
+// `

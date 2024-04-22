@@ -2,12 +2,7 @@
     margin: 8rem 3rem 3rem;
 }
 
-.react-multi-carousel-item {
-    object-fit: contain !important;
-}
-
-
-img {
+.carouselContainer img {
     object-fit: contain !important;
 }
 

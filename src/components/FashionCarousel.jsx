@@ -57,11 +57,11 @@ const FashionSlides = ({ title }) => {
           />
         ))} */}
 
-        <StaticImage src="../assets/images/carousel-images/fashion/fashion1.png" alt=""/>
-        <StaticImage src="../assets/images/carousel-images/fashion/fashion2.png" alt=""/>
-        <StaticImage src="../assets/images/carousel-images/fashion/fashion3.png" alt=""/>
-        <StaticImage src="../assets/images/carousel-images/fashion/fashion4.png" alt=""/>
-        <StaticImage src="../assets/images/carousel-images/fashion/fashion5.png" alt=""/>
+        <StaticImage src="../assets/images/carousel-images/fashion/fashion1.png" alt="" className={Style.item}/>
+        <StaticImage src="../assets/images/carousel-images/fashion/fashion2.png" alt="" className={Style.item}/>
+        <StaticImage src="../assets/images/carousel-images/fashion/fashion3.png" alt="" className={Style.item}/>
+        <StaticImage src="../assets/images/carousel-images/fashion/fashion4.png" alt="" className={Style.item}/>
+        <StaticImage src="../assets/images/carousel-images/fashion/fashion5.png" alt="" className={Style.item}/>
       </Carousel>
     </div>
   )

@@ -62,11 +62,11 @@ const SkinCareSlides = ({ title }) => {
           />
         ))} */}
 
-        <StaticImage src="../assets/images/carousel-images/skincare/Skincare slides-01.png"/>
-        <StaticImage src="../assets/images/carousel-images/skincare/Skincare slides-02.png"/>
-        <StaticImage src="../assets/images/carousel-images/skincare/Skincare slides-03.png"/>
-        <StaticImage src="../assets/images/carousel-images/skincare/Skincare slides-04.png"/>
-        <StaticImage src="../assets/images/carousel-images/skincare/Skincare slides-05.png"/>
+        <StaticImage src="../assets/images/carousel-images/skincare/Skincare slides-01.png" alt="" className={Style.item}/>
+        <StaticImage src="../assets/images/carousel-images/skincare/Skincare slides-02.png" alt="" className={Style.item}/>
+        <StaticImage src="../assets/images/carousel-images/skincare/Skincare slides-03.png" alt="" className={Style.item}/>
+        <StaticImage src="../assets/images/carousel-images/skincare/Skincare slides-04.png" alt="" className={Style.item}/>
+        <StaticImage src="../assets/images/carousel-images/skincare/Skincare slides-05.png" alt="" className={Style.item}/>
 
       </Carousel>
     </div>

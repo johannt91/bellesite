@@ -1,31 +1,49 @@
 .container {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-    padding-top:8rem;
-    gap: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 3rem 0;
+  gap: 3.5rem;
 }
 
 .logo {
+  position: absolute;
+  opacity: 0.2;
+  height: 30rem;
+
+}
+
+.about {
+  width: 32rem;
+  margin-top: 3rem;
+}
+
+.heading {
+  font-size: 4rem;
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: justify;
+  text-wrap: wrap;
+}
+
+@media (min-width: 50rem) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .logo {
+    position: relative;
+    opacity: 1;
     width: 25rem;
     height: 35rem;
     object-fit: cover;
     background-color: #fff;
-}
-
-.about {
-    width: 32rem;
-    margin-top: 3rem;
-}
-
-.heading {
-    font-size: 4rem;
-}
-
-.description {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    line-height: 2rem;
-    text-align: justify;
+  }
 }

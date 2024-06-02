@@ -56,7 +56,6 @@ const FashionSlides = ({ title }) => {
             key={image.id}
           />
         ))} */}
-
         <StaticImage src="../assets/images/carousel-images/fashion/fashion1.png" alt="" className={Style.item}/>
         <StaticImage src="../assets/images/carousel-images/fashion/fashion2.png" alt="" className={Style.item}/>
         <StaticImage src="../assets/images/carousel-images/fashion/fashion3.png" alt="" className={Style.item}/>

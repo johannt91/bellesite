@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import "../assets/styles/global.css"
 import * as Main from "../assets/styles/main.module.css"
 import * as Style from "../assets/styles/portfolio.module.css"
+import jewelryGif from "../assets/images/jewelry.gif"
 import { Link } from "gatsby"
 import Typewriter from "typewriter-effect"
 
@@ -49,46 +50,27 @@ export default function Home() {
       </section>
 
       {/* TOP HALF OF PORTFOLIO */}
-      <main id="portfolio" className={Style.portfolio}>
-        <div className={Style.portfolio_container}>
-          <div className={Style.portfolio_item_container}>
-            <Link
-              to="/404"
-              className={Style.portfolio_item}
-              state={{ galleryTitle: "Web Design" }}
-            >
-              <StaticImage
-                src="../assets/images/img4.jpg"
-                alt="technology"
-                className={Style.img_responsive}
-              />
-              <div className={Style.portfolio_item_hover}>
-                <div className="clearfix">
-                  <div className={Style.item_info}>
-                    <span>WEB DESIGN</span>
-                    <em>Coding / Copywriting</em>
-                  </div>
-                </div>
-              </div>
-            </Link>
-          </div>
 
-          <div className={Style.portfolio_item_container}>
+      <main id="portfolio" className={Style.portfolio}>
+      <h5 className={Style.portfolio_heading}>
+            Brilliant ideas tell a great story.
+      </h5>
+        <div className={Style.portfolio_container}>
+          <div className={`${Style.portfolio_item_container} ${Style.grid_item1}`}>
             <Link
               to="/food"
               className={Style.portfolio_item}
-              state={{ galleryTitle: "Food" }}
+              state={{ galleryTitle: "Bakery" }}
             >
               <StaticImage
                 src="../assets/images/gallery/food.jpg"
                 alt="technology"
                 className={Style.img_responsive}
               />
-              <div className={Style.portfolio_item_hover}>
+              <div className={`${Style.portfolio_item_hover} ${Style.portfolio_item_overlay1}`}>
                 <div className="clearfix">
                   <div className={Style.item_info}>
-                    <span>FOOD</span>
-                    <em>Branding / Advertising</em>
+                    <span>Bakery</span>
                   </div>
                 </div>
               </div>
@@ -96,67 +78,64 @@ export default function Home() {
           </div>
 
           <div
-            className={`${Style.portfolio_item_container} ${Style.portfolio_grid_item_first}`}
+            className={`${Style.portfolio_item_container} ${Style.grid_item2}`}
           >
             <Link
-              to="/fashion"
+              to="/prodLabels"
               className={Style.portfolio_item}
-              state={{ galleryTitle: "Fashion" }}
+              state={{ galleryTitle: "Product Labels" }}
             >
               <StaticImage
-                src="../assets/images/gallery/fashion.jpg"
+                src="../assets/images/prod_labels.jpeg"
                 alt="technology"
                 className={Style.img_responsive}
               />
-              <div className={Style.portfolio_item_hover}>
+              <div className={`${Style.portfolio_item_hover} ${Style.portfolio_item_overlay2}`}>
                 <div className="clearfix">
                   <div className={Style.item_info}>
-                    <span>FASHION</span>
-                    <em>Featured Project</em>
+                    <span>Product Labels</span>
                   </div>
                 </div>
               </div>
             </Link>
           </div>
 
-          <div className={Style.portfolio_item_container}>
+          <div className={`${Style.portfolio_item_container} ${Style.grid_item3}`}>
             <Link
               to="/photography"
               className={Style.portfolio_item}
               state={{ galleryTitle: "Product Photography" }}
             >
               <StaticImage
-                src="../assets/images/gallery/product.jpg"
+                src="../assets/images/prod_photo.jpeg"
                 alt="technology"
                 className={Style.img_responsive}
               />
-              <div className={Style.portfolio_item_hover}>
+              <div className={`${Style.portfolio_item_hover} ${Style.portfolio_item_overlay3}`}>
                 <div className="clearfix">
                   <div className={Style.item_info}>
-                    <span>PRODUCT PHOTOGRAPHY</span>
-                    <em>Styling / White Box</em>
+                    <span>Product Photography</span>
                   </div>
                 </div>
               </div>
             </Link>
           </div>
 
-          <div className={Style.portfolio_item_container}>
+          <div className={`${Style.portfolio_item_container} ${Style.grid_item4}`}>
             <Link
-              to="/404"
+              to="/fashion"
               className={Style.portfolio_item}
-              state={{ galleryTitle: "Digital Content" }}
+              state={{ galleryTitle: "Fashion" }}
             >
               <StaticImage
-                src="../assets/images/gallery/noodle.jpg"
+                src="../assets/images/gallery/fashion.jpeg"
                 alt="cup noodles"
                 className={Style.img_responsive}
               />
-              <div className={Style.portfolio_item_hover}>
+              <div className={`${Style.portfolio_item_hover} ${Style.portfolio_item_overlay2}`}>
                 <div className="clearfix">
                   <div className={Style.item_info}>
-                    <span>DIGITAL CONTENT</span>
-                    <em>Graphics / Ads</em>
+                    <span>Fashion</span>
                   </div>
                 </div>
               </div>
@@ -166,44 +145,42 @@ export default function Home() {
 
         {/* BOTTOM HALF OF PORTFOLIO */}
         <div className={Style.portfolio_container}>
-          <div className={Style.portfolio_item_container}>
+          <div className={`${Style.portfolio_item_container} ${Style.grid_item5}`}>
             <Link
-              to="/prodLabels"
+              to="/skincare"
               className={Style.portfolio_item}
-              state={{ galleryTitle: "Product Labels" }}
+              state={{ galleryTitle: "Skin Care" }}
             >
               <StaticImage
-                src="../assets/images/gallery/prodlabel.jpg"
+                src="../assets/images/skin_care.jpeg"
                 alt="green tins of cow milk brand butter ghee"
                 className={Style.img_responsive}
               />
-              <div className={Style.portfolio_item_hover}>
+              <div className={`${Style.portfolio_item_hover} ${Style.portfolio_item_overlay2}`}>
                 <div className="clearfix">
                   <div className={Style.item_info}>
-                    <span>PRODUCT LABELS</span>
-                    <em>Labels for your products</em>
+                    <span>Skin Care</span>
                   </div>
                 </div>
               </div>
             </Link>
           </div>
 
-          <div className={Style.portfolio_item_container}>
+          <div className={`${Style.portfolio_item_container} ${Style.grid_item6}`}>
             <Link
-              to="/404"
+              to="/creativeContent"
               className={Style.portfolio_item}
-              state={{ galleryTitle: "Logo Design" }}
+              state={{ galleryTitle: "Creative Content" }}
             >
-              <StaticImage
-                src="../assets/images/gallery/ebene.jpg"
+              <img
+                src={jewelryGif}
                 alt="macarons"
                 className={Style.img_responsive}
               />
-              <div className={Style.portfolio_item_hover}>
+              <div className={`${Style.portfolio_item_hover} ${Style.portfolio_item_overlay2}`}>
                 <div className="clearfix">
                   <div className={Style.item_info}>
-                    <span>LOGO DESIGN</span>
-                    <em>Brand Identity &amp; Guidance</em>
+                    <span>Creative Content</span>
                   </div>
                 </div>
               </div>
@@ -211,124 +188,101 @@ export default function Home() {
           </div>
 
           <div
-            className={`${Style.portfolio_item_container} ${Style.portfolio_grid_item_second}`}
+            className={`${Style.portfolio_item_container} ${Style.grid_item7}`}
           >
             <Link
-              to="/skincare"
+              to="/corporate"
               className={Style.portfolio_item}
-              state={{ galleryTitle: "Skin Care" }}
+              state={{ galleryTitle: "Corporate Identity" }}
             >
               <StaticImage
-                src="../assets/images/gallery/skincare1.jpg"
-                alt="skin care"
+                src="../assets/images/gallery/ebene.jpg"
+                alt="ebene logo"
                 className={Style.img_responsive}
               />
-              <div className={Style.portfolio_item_hover}>
+              <div className={`${Style.portfolio_item_hover} ${Style.portfolio_item_overlay3}`}>
                 <div className="clearfix">
                   <div className={Style.item_info}>
-                    <span>SKIN CARE</span>
-                    <em>Featured Project</em>
+                    <span>Corporate Identity</span>
                   </div>
                 </div>
               </div>
             </Link>
           </div>
 
-          <div className={Style.portfolio_item_container}>
+          <div className={`${Style.portfolio_item_container} ${Style.grid_item8}`}>
             <Link
-              to="/404"
+              to="/retail"
               className={Style.portfolio_item}
-              state={{ galleryTitle: "Retail" }}
+              state={{ galleryTitle: "Retail Branding & Design" }}
             >
               <StaticImage
                 src="../assets/images/gallery/retail.jpg"
                 alt="retail graphic"
                 className={Style.img_responsive}
               />
-              <div className={Style.portfolio_item_hover}>
+              <div className={`${Style.portfolio_item_hover} ${Style.portfolio_item_overlay1}`}>
                 <div className="clearfix">
                   <div className={Style.item_info}>
-                    <span>RETAIL</span>
-                    <em>Retail</em>
+                    <span>Retail Branding &amp; Design</span>
                   </div>
                 </div>
               </div>
             </Link>
           </div>
 
-          <div className={Style.portfolio_item_container}>
-            <Link
-              to="/404"
-              className={Style.portfolio_item}
-              state={{ galleryTitle: "Signage and Displays" }}
-            >
-              <StaticImage
-                src="../assets/images/gallery/signage.jpg"
-                alt="technology"
-                className={Style.img_responsive}
-              />
-              <div className={Style.portfolio_item_hover}>
-                <div className="clearfix">
-                  <div className={Style.item_info}>
-                    <span>SIGNAGE &amp; DISPLAYS</span>
-                    <em>External &amp; Internal Signage</em>
-                  </div>
-                </div>
-              </div>
-            </Link>
-          </div>
         </div>
       </main>
 
       {/* ENABLE SMOOTH SCROLLING TO HERE */}
-      <section className={Main.services}>
+      <section className={Main.teams}>
         <h2 className={Main.section_title} id="team">
           Meet the Team
         </h2>
-        <ul className={Main.services_list}>
-          <li className={Main.service}>
+        <ul className={Main.team_list}>
+          <li className={Main.team}>
             <StaticImage
               src="../assets/images/web.jpg"
               alt="technology"
-              className={Main.service_image}
+              className={Main.team_image}
             />
-            <p className={Main.service_description}>
+            <p className={Main.team_description}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
               nec viverra augue. Suspendisse feugiat est eget nunc mollis
               interdum. Proin.
             </p>
           </li>
-          <li className={Main.service}>
+          <li className={Main.team}>
             <StaticImage
               src="../assets/images/digital1.jpg"
               alt="technology"
-              className={Main.service_image}
+              className={Main.team_image}
             />
-            <p className={Main.service_description}>
+            <p className={Main.team_description}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
               nec viverra augue. Suspendisse feugiat est eget nunc mollis
               interdum. Proin.
             </p>
           </li>
-          <li className={Main.service}>
+          <li className={Main.team}>
             <StaticImage
               src="../assets/images/camera.jpg"
               alt="technology"
-              className={Main.service_image}
+              className={Main.team_image}
             />
-            <p className={Main.service_description}>
+            <p className={Main.team_description}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
               nec viverra augue. Suspendisse feugiat est eget nunc mollis
               interdum. Proin.
             </p>
           </li>
-          <li className={Main.service}>
+          <li className={Main.team}>
             <StaticImage
               src="../assets/images/graphic.jpg"
               alt="technology"
-              className={Main.service_image}
+              className={Main.team_image}
             />
-            <p className={Main.service_description}>
+            <p className={Main.team_description}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
               nec viverra augue. Suspendisse feugiat est eget nunc mollis
               interdum. Proin.

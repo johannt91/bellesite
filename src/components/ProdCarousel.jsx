@@ -1,8 +1,6 @@
 import React from "react"
-// import { useStaticQuery, graphql } from "gatsby"
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
-// import { GatsbyImage } from "gatsby-plugin-image"
 import { StaticImage } from "gatsby-plugin-image"
 import * as Style from "../assets/styles/carousel.module.css"
 
@@ -62,22 +60,12 @@ const ProdSlides = ({ title }) => {
           />
         ))} */}
         <StaticImage src="../assets/images/carousel-images/prodLabels/label1.jpg" alt="" className={Style.item}/>
-        <StaticImage src="../assets/images/carousel-images/prodLabels/label2.png" alt="" className={Style.item}/>
+        <StaticImage src="../assets/images/carousel-images/prodLabels/label2.jpg" alt="" className={Style.item}/>
         <StaticImage src="../assets/images/carousel-images/prodLabels/label3.jpg" alt="" className={Style.item}/>
         <StaticImage src="../assets/images/carousel-images/prodLabels/label4.jpg" alt="" className={Style.item}/>
         <StaticImage src="../assets/images/carousel-images/prodLabels/label5.jpg" alt="" className={Style.item}/>
         <StaticImage src="../assets/images/carousel-images/prodLabels/label6.jpg" alt="" className={Style.item}/>
         <StaticImage src="../assets/images/carousel-images/prodLabels/label7.jpg" alt="" className={Style.item}/>
-        <StaticImage src="../assets/images/carousel-images/prodLabels/label8.jpg" alt="" className={Style.item}/>
-        <StaticImage src="../assets/images/carousel-images/prodLabels/label9.jpg" alt="" className={Style.item}/>
-        <StaticImage src="../assets/images/carousel-images/prodLabels/label10.png" alt="" className={Style.item}/>
-        <StaticImage src="../assets/images/carousel-images/prodLabels/label11.png" alt="" className={Style.item}/>
-        <StaticImage src="../assets/images/carousel-images/prodLabels/label12.png" alt="" className={Style.item}/>
-        <StaticImage src="../assets/images/carousel-images/prodLabels/label13.png" alt="" className={Style.item}/>
-        <StaticImage src="../assets/images/carousel-images/prodLabels/label14.png" alt="" className={Style.item}/>
-        <StaticImage src="../assets/images/carousel-images/prodLabels/label15.png" alt="" className={Style.item}/>
-        <StaticImage src="../assets/images/carousel-images/prodLabels/label16.png" alt="" className={Style.item}/>
-        <StaticImage src="../assets/images/carousel-images/prodLabels/label17.png" alt="" className={Style.item}/>
       </Carousel>
     </div>
   )

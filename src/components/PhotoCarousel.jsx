@@ -63,12 +63,10 @@ const PhotoSlides = ({ title }) => {
         ))} */}
 
         <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-01.png" alt="" className={Style.item}/>
-        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-02.png" alt="" className={Style.item}/>
         <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-03.png" alt="" className={Style.item}/>
         <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-04.png" alt="" className={Style.item}/>
         <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-05.png" alt="" className={Style.item}/>
         <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-06.png" alt="" className={Style.item}/>
-        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-07.png" alt="" className={Style.item}/>
         <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-09.png" alt="" className={Style.item}/>
         <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-10.png" alt="" className={Style.item}/>
         <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-11.png" alt="" className={Style.item}/>
@@ -77,10 +75,7 @@ const PhotoSlides = ({ title }) => {
         <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-14.png" alt="" className={Style.item}/>
         <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-15.png" alt="" className={Style.item}/>
         <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-16.png" alt="" className={Style.item}/>
-        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-17.png" alt="" className={Style.item}/>
-        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-18.png" alt="" className={Style.item}/>
-        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-19.png" alt="" className={Style.item}/>
-        <StaticImage src="../assets/images/carousel-images/photography/PHOTOGRAPHY SLIDES-20.png" alt="" className={Style.item}/>
+
       </Carousel>
     </div>
   )

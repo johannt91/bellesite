@@ -10,7 +10,7 @@ const MobileNav = () => {
       <>
         <nav className="mobile-navbar">
             <div className="nav-header">
-                <StaticImage src="../assets/images/logo.jpg" alt="Belles Artz" className="nav-logo"/>
+                <StaticImage src="../assets/images/bellesartzlogo.svg" alt="Belles Artz" className="nav-logo"/>
                 <button className="toggle-button" onClick={()=>setShow(!show)}>
                     <span className={show ? "toggle-button__bar bar-open" : "toggle-button__bar bar-close"}></span>
                     <span className={show ? "toggle-button__bar bar-open" : "toggle-button__bar bar-close"}></span>

@@ -62,11 +62,11 @@ const FoodSlides = ({ title }) => {
           />
         ))} */}
 
-<       StaticImage src="../assets/images/carousel-images/food/food1.png" alt="" className={Style.item}/>
-<       StaticImage src="../assets/images/carousel-images/food/food2.png" alt="" className={Style.item}/>
-<       StaticImage src="../assets/images/carousel-images/food/food3.png" alt="" className={Style.item}/>
-<       StaticImage src="../assets/images/carousel-images/food/food4.png" alt="" className={Style.item}/>
-<       StaticImage src="../assets/images/carousel-images/food/food5.png" alt="" className={Style.item}/>
+<       StaticImage src="../assets/images/carousel-images/food/Bakery01.jpg" alt="" className={Style.item}/>
+<       StaticImage src="../assets/images/carousel-images/food/Bakery02.jpg" alt="" className={Style.item}/>
+<       StaticImage src="../assets/images/carousel-images/food/Bakery03.jpg" alt="" className={Style.item}/>
+<       StaticImage src="../assets/images/carousel-images/food/Bakery04.jpg" alt="" className={Style.item}/>
+<       StaticImage src="../assets/images/carousel-images/food/Bakery05.jpg" alt="" className={Style.item}/>
       </Carousel>
     </div>
   )

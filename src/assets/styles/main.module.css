@@ -1,5 +1,5 @@
 .hero {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -128,35 +128,36 @@ strong span {
 }
 
 /* ==================== Services Section Style Start ==================== */
-.services {
+.teams {
   margin-top: 10rem;
   margin-bottom: 10rem;
   text-align: center;
+  display: none;
 }
 
 
-.services_subtext {
+.team_subtext {
   margin-top: 2rem;
 }
 
-.services_list {
+.team_list {
   list-style: none;
   padding: 0;
   margin: 0;
   background-color: #fff;
 }
 
-.service {
+.team {
   padding: 2rem 0;
 }
 
-.service_image {
+.team_image {
   height: 150px;
   width: 150px;
   transition: 1s;
 }
 
-.service_description {
+.team_description {
   max-width: 65%;
   margin: auto;
 }
@@ -166,27 +167,27 @@ strong span {
     font-size: 4rem;
   }
 
-  .services {
+  .teams {
     max-width: 80rem;
     margin: 10rem auto;
   }
 
-  .section_title {
+  .team_title {
     font-size: 3rem;
     width: 20rem;
   }
 
-  .service {
+  .team {
     width: 40%;
     max-width: 30rem;
   }
 
-  .services_list {
+  .team_list {
     display: flex;
     justify-content: space-around;
   }
 
-  .service_image:hover {
+  .team_image:hover {
     transform: rotate(360deg);
   }
 }

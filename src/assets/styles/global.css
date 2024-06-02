@@ -138,7 +138,7 @@ footer {
     display: block;
     position: fixed;
     background: #fff;
-    z-index: 100;
+    z-index: 9999;
     width: 100%;
     top: 0;
     left: 0;

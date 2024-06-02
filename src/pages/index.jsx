@@ -235,7 +235,7 @@ export default function Home() {
       </main>
 
       {/* ENABLE SMOOTH SCROLLING TO HERE */}
-      <section className={Main.teams}>
+      {/* <section className={Main.teams}>
         <h2 className={Main.section_title} id="team">
           Meet the Team
         </h2>
@@ -289,7 +289,7 @@ export default function Home() {
             </p>
           </li>
         </ul>
-      </section>
+      </section> */}
 
       {/* <section className={Main.quote_container}>
         <h2 className={Main.section_title}>Get a Quote</h2>

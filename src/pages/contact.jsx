@@ -9,8 +9,8 @@ const Contact = () => {
         <h1>Contact Us</h1>
 
         <form
-          method="post"
-          action="https://getform.io/f/zaxdzgka"
+          // method="post"
+          // action="https://getform.io/f/zaxdzgka"
         >
           <label>
             <input type="email" name="email" placeholder="Email"/>
